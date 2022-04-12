@@ -24,7 +24,7 @@ Then add `--filter "flowify::FlowifyFilter(pre=True)"` to your fontmake command 
 % fontmake -o ttf -i -g Urbanist.glyphs --filter "flowify::FlowifyFilter(pre=True)"
 ```
 
-Note that the filenames produced by this command will still be the original names (e.g. `Urbanist-BlackItalic.ttf`) but the names in the `name` table will have the word "Flow" added (`Urbanist Black Italic Flow`).
+Note that the filenames produced by this command will still be the original names (e.g. `Urbanist-BlackItalic.ttf`) but the "font name" and "PostScript name" entries in the `name` table will have the word "Flow" added (`Urbanist Flow Black Italic`).
 
 Alternatively, flowify can be used to filter UFO files and write flow versions:
 

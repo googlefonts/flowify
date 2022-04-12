@@ -74,7 +74,11 @@ class Flowify:
         self.create_some_routines()
         self.add_feature(feature, no_blank, shape)
 
-        font.info.styleName += " Flow"
+        font.info.familyName += " Flow"
+        if font.info.postscriptFontName:
+            font.info.postscriptFontName += " Flow"
+        if font.info.styleMapFamilyName:
+            font.info.styleMapFamilyName += " Flow"
 
     def setup_needed_glyphs(self, margin):
 
