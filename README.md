@@ -2,7 +2,7 @@
 
 A *flow font* is a unit-for-unit compatible version of a font used in UX/UI design mockups; in these situations, the actual text being displayed becomes a distraction from the design process, and so instead of having identifiable glyph shapes in each word, the font displays a rectangular or pill-shaped (["stadium"](https://mathworld.wolfram.com/Stadium.html)) slugs:
 
-![imgs/mocks.png](img/mocks.png)
+![imgs/mocks.png](imgs/mocks.png)
 
 Flowify is a command line utility and a fontmake filter for turning fonts into flow fonts.
 
@@ -42,7 +42,7 @@ Next, each glyph is substituted by slug glyphs which encode its width. A simplif
 
 Finally, there is a lookup which makes a decision based on the total width of each slug: if the slug's width is larger than the width of the start and end semicircular caps, then the caps are added and the width of the caps is subtracted from the slug's width; if not (i.e. the word is too narrow for semicircular caps to fit), then the slugs are replaced by blank spaces:
 
-![imgs/blank.png](img/blank.png)
+![imgs/blank.png](imgs/blank.png)
 
 If you want to have a rectangular slug with no semicircular end caps in this situation, you can customize the output using the options below.
 
@@ -58,13 +58,13 @@ By default, the slug runs vertically from the baseline to the font's x-height. I
 
 Here is an example of a Devanagari font (Vaibhav Singh and Rosetta Type's Eczar) with `slug_height='cap',shape='rectangle'`:
 
-![imgs/devanagari.png](img/devanagari.png)
+![imgs/devanagari.png](imgs/devanagari.png)
 
 ### Changing the blanking behaviour
 
 As mentioned above, if the total width of a pill-shaped slug is not wide enough to fit the semicircular caps, the entire pill is blanked out. This avoids mixing rectangular and pill shaped slugs, but it may leave unsightly gaps in the middle of the text. If a mix of rectangles and pills is acceptable, then you can set `--no-blank` (fontmake: `no_blank=True`) to disable this behaviour.
 
-![imgs/no-blank.png](img/no-blank.png)
+![imgs/no-blank.png](imgs/no-blank.png)
 
 ### Changing the cap sidebearings
 
