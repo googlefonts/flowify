@@ -1,4 +1,4 @@
-# Flowify
+# Flowify: Turn a font into a flow font
 
 A *flow font* is a unit-for-unit compatible version of a font used in UX/UI design mockups; in these situations, the actual text being displayed becomes a distraction from the design process, and so instead of having identifiable glyph shapes in each word, the font displays a rectangular or pill-shaped (["stadium"](https://mathworld.wolfram.com/Stadium.html)) slugs:
 

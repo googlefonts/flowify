@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flowify"
+version = "0.1.0"
+description = "Turn a font into a flow font"
+authors = ["Simon Cozens <simon@simon-cozens.org>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+fontfeatures = ">=1.6.0"
+inflect = "*"
+numpy = "*"
+ufoLib2 = "*"
+ufo2ft = ">=2.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+flowify = 'flowify:main'
