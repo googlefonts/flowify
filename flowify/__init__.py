@@ -1,11 +1,13 @@
-from ufoLib2.objects import Glyph
-from fontFeatures import FontFeatures, Substitution, Routine, Chaining
-import numpy as np
+import logging
+
 import inflect
+import numpy as np
+from fontFeatures import Chaining, FontFeatures, Routine, Substitution
 from ufo2ft.filters import BaseFilter
 from ufo2ft.util import _GlyphSet, _LazyFontName
+from ufoLib2.objects import Glyph
+
 import flowify.drawing
-import logging
 
 logger = logging.getLogger(__name__)
 
